@@ -570,10 +570,6 @@ video {
   display: none;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -689,14 +685,6 @@ video {
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/img\/falcon\.png\'\)\] {
-  background-image: url('/img/falcon.png');
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .p-0 {
@@ -822,16 +810,6 @@ img {
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:h-full {
-    height: 100%;
-  }
-
-  .sm\:bg-cover {
-    background-size: cover;
   }
 }
 
