@@ -7,6 +7,23 @@
     background: radial-gradient(whitesmoke, skyblue)
 }
 
-.any-link {
+a {
     text-decoration: underline;
+}
+
+main a {
+    color: hsl(125, 82%, 30%);
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 90;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li {
+    list-style-type: disc;
 }

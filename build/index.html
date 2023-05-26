@@ -7,20 +7,21 @@
     <title>Leon's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="text-blue-400 dark:radial-blue any-link">
+<body class="text-blue-700 radial-blue dark: radial-blue">
     <header class="grid grid-flow-col bg-slate-400 text-white dark:text-white dark:bg-green-400 p-2">
     <h1 class="underline decoration-3 text-5xl underline-offset-3 mb-2">Patrick Leon</h1>
-
+<nav class>
     <li><a href="#project">Projects</a></li>
     <li><a href="#about">About Me</a></li>
     <li><a href="#contact">Contact Me</a></li>
+</nav>
 </header>
 
-<main class="pl-1">
+<main id="main">
     <article>
-    <p class="text-xl">A passionate Frontend Developer looking to give the best and improve user experience. </p>
+    <p class="text-xl"> <!-- <img src="" alt="">  -->A passionate Frontend Developer looking to give the best and improve user experience. </p>
 
-    <section id="project text-xl">
+    <section id="project" class="text-xl">
     <h2 class="underline underline-offset-8 text-3xl bg-orange-400 h-12 text-center">Projects</h2>
     <p>I have worked on various mini-projects:</p>
     <h3>HTML project</h3>
@@ -34,32 +35,33 @@
     <a href="">Tailwind project</a>
 </section>
 
-<section id="about">
+<section id="about" class="text-xl">
     <h2 class="underline underline-offset-8 text-3xl bg-orange-400 h-12 text-center">About Me</h2>
     <p>I grew up and live in Juja, Kiambu. I began to code after completing highschool.</p>
     <p>I went to Juja St. Peter's school where I passed my KCPE. <br>I joined Kagumo High School where I maintained high levels of consistency and hardwork which ensured I passed my KCSE as well.</p>
     <p>My hobbies and interests include:</p>
-    <ol>
-        <li> Reading novels</li>
-        <li> Playing chess, scrabble and snakes &amp; ladders</li>
-        <li> Playing football</li>
+    <ol class="grid grid-flow-row place-content-center">
+        <li class="text-justify"> Reading novels.</li>
+        <li class="text-justify"> Playing chess, scrabble and snakes &amp; ladders.</li>
+        <li class="text-justify"> Playing football.</li>
     </ol>
+    <br>
     <p>I also have skills such as:</p>
-    <ul>
-        <li>Critical thinking</li>
-        <li>Collaboration with other people</li>
-        <li>Time management</li>
+    <ul class="grid grid-flow-row place-content-center">
+        <li class="text-justify">Critical thinking</li>
+        <li class="text-justify">Collaboration with other people</li>
+        <li class="text-justify">Time management</li>
     </ul>
 </section>
 
-<section id="contact">
+<section id="contact" class="text-xl">
     <h2 class="underline underline-offset-8 text-3xl bg-orange-400 h-12 p-0 text-center">Contact Me</h2>
     <form action="">
         <label for="yourname">Name:</label>
-        <input type="text" name="yourname" id="yourname" placeholder="Your Name" required>
+        <input type="text" name="yourname" id="yourname" placeholder="Your Name" class="text-black border border-solid border-blue-900 bg-slate-200" required>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" class="text-black border border-solid border-blue-900 bg-slate-200" bg-slate-200" required>
 
        <p>Reach me:
         <address>
@@ -80,8 +82,9 @@
 
     <footer>
         <h3>Socials:</h3>
-        <p>
-            <a href="">Instagram</a>  <a href="">Facebook</a>
+        <p class="grid grid-flow-col">
+            <a href="">Instagram</a> 
+            <a href="">Facebook</a>
             <br><br>
             <a href="+254112345678">Whatsapp</a>
         </p>
