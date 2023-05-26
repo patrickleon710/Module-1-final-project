@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth w-full h-full min-h-screen">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Leon's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="main.js" defer></script> 
 </head>
-<body class="text-blue-700 dark:bg-black">
-    <header class="grid grid-flow-col bg-slate-400 text-white dark:text-white dark:bg-green-400 p-2">
+<body class="relative text-blue-700 dark: radial-blue min-h-fit">
+<section class="relative">
+    <header class="grid grid-flow-col fixed top-0 w-full bg-slate-400 text-white dark:text-white dark:bg-green-400 p-2">
     <h1 class="underline decoration-3 text-5xl underline-offset-3 mb-2">Patrick Leon</h1>
-<nav class>
+    <div class="bg-transparent">
+        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
+            &#9776;
+        </button>
+<nav class="hidden text-white md:block space-x-8 text-xl" aria-label="main">
+    <ul>
     <li><a href="#project">Projects</a></li>
     <li><a href="#about">About Me</a></li>
     <li><a href="#contact">Contact Me</a></li>
+</ul>
 </nav>
+
+</div>
+<div id="mobile-menu" class="absolute top-0 bg-slate-400 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+    <button class="text-8xl text-white self-end px-6">&times;</button>
+<nav class="text-white flex flex-col min-h-screen items-center py-5" aria-label="mobile">
+    <li><a href="#project" class="w-full text-center py-6 hover:opacity-50">Projects</a></li>
+    <li><a href="#about" class="w-full text-center py-6 hover:opacity-50">About Me</a></li>
+    <li><a href="#contact" class="w-full text-center py-6 hover:opacity-50">Contact Me</a></li>
+</nav>
+</div>
 </header>
+</section>
+
+
+
+
 
 <main id="main">
     <article>
-    <p class="text-xl"> <img src="img/thisisme.jpg" alt="This is me"><!-- <img src="" alt="">  -->A passionate Frontend Developer looking to give the best and improve user experience. </p>
+        <section class="grid grid-flow-col bg-cover bg-[url('/img/falcon.png')] sm:bg-cover w-full h-1/2 sm:h-full">
 
-    <section id="project" class="text-xl">
+            <p class="text-xl "> A passionate Frontend Developer looking to give the best and improve user experience. </p>
+<figure class="grid float-right border-solid border-gray-950 rounded-full">
+    
+</figure>
+        </section>
+    
+
+    <section id="project">
     <h2 class="underline underline-offset-8 text-3xl bg-orange-400 h-12 text-center">Projects</h2>
     <p>I have worked on various mini-projects:</p>
     <h3>HTML project</h3>
@@ -35,7 +65,7 @@
     <a href="">Tailwind project</a>
 </section>
 
-<section id="about" class="text-xl">
+<section id="about">
     <h2 class="underline underline-offset-8 text-3xl bg-orange-400 h-12 text-center">About Me</h2>
     <p>I grew up and live in Juja, Kiambu. I began to code after completing highschool.</p>
     <p>I went to Juja St. Peter's school where I passed my KCPE. <br>I joined Kagumo High School where I maintained high levels of consistency and hardwork which ensured I passed my KCSE as well.</p>
@@ -52,9 +82,12 @@
         <li class="text-justify">Collaboration with other people</li>
         <li class="text-justify">Time management</li>
     </ul>
+
+    <h3>Why I chose Directed:</h3>
+    <p>I chose to study with Direct Ed because they provide a great opportunity to learn, meet new people as well as</p>
 </section>
 
-<section id="contact" class="text-xl">
+<section id="contact">
     <h2 class="underline underline-offset-8 text-3xl bg-orange-400 h-12 p-0 text-center">Contact Me</h2>
     <form action="">
         <label for="yourname">Name:</label>
@@ -80,23 +113,27 @@
 </article>
 </main>
 
-    <footer>
+    <footer class="sticky bottom-0 bg-yellow-300 w-full">
         <h3>Socials:</h3>
         <p class="grid grid-flow-col">
             <a href="https//:instagram.com">Instagram</a> 
-            <a href="">Facebook</a>
+            <a href="https//:facebook.com">Facebook</a>
             <br><br>
             <a href="+254112345678">Whatsapp</a>
-            <div>
-                <img src="img/instaicon.jpg" alt="facebook icon" title="My facebook page">
-                <img src="img/facebookicon.jpg" alt="instagram icon" title="My facebook page">
-                <img src="img/whatsappicon.jpg" alt="whatsapp icon" title="My facebook page">
+
+            <div class="fixed bottom-0">
+                <a href="/">Back to top</a>
             </div>
+           <!--  <figure class="flex flex-row justify-evenly">
+                <img src="../img/c8952d6e421a83d298a219edee783167.jpg" alt="instagram icon" width="90" height="40" class="float-left">            
+                <img src="../img/b2ef689d1f387dfc949d0f63c3865441.jpg" alt="facebook icon" width="200" height="200">
+                <img src="../img/94c02cc46ea0d7429614212ed0517735.jpg" alt="whatsapp icon" width="200" height="200">
+            </figure> -->
         </p>
     </footer>
-    <br><br><br>
+    <br>
     <hr>
-    <a href="/">Back to top</a>
+    
        
 
 

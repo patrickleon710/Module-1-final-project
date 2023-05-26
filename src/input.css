@@ -7,6 +7,11 @@
     background: radial-gradient(whitesmoke, skyblue)
 }
 
+header {
+    width: 100%;
+    position: fixed;
+}
+
 a {
     text-decoration: underline;
 }
@@ -16,8 +21,9 @@ main a {
     text-decoration: underline;
 }
 
-a:hover {
-    opacity: 90;
+main a:hover {
+    color: red;
+    opacity: 50;
 }
 
 ul li {
@@ -28,6 +34,9 @@ ol li {
     list-style-type: disc;
 }
 
+
+
 img {
-    float: right;
+    border: 2px solid black;
+    border-radius: 999;
 }
