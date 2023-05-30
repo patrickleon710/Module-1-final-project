@@ -7,36 +7,6 @@
     background: radial-gradient(whitesmoke, skyblue)
 }
 
-header {
-    width: 100%;
-    position: fixed;
-}
-
-a {
-    text-decoration: underline;
-}
-
-main a {
-    color: hsl(125, 82%, 30%);
-    text-decoration: underline;
-}
-
-main a:hover {
-    color: red;
-    opacity: 50;
-}
-
-ul li {
-    list-style-type: disc;
-}
-
-ol li {
-    list-style-type: disc;
-}
-
-
-
-img {
-    border: 2px solid black;
-    border-radius: 999;
+.radial-dark {
+    background: linear-gradient(to bottom, darkblue, lightpink, purple);
 }
