@@ -11,3 +11,5 @@ img/20230525_092907.jpg
 .gitignore
 .gitignore
 .gitignore
+css/main.css
+build/index.html
