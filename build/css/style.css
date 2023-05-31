@@ -747,6 +747,10 @@ video {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body main {
+  line-height: 6px;
+}
+
 h2 {
   font-size: 2rem;
   text-decoration: underline;
@@ -776,6 +780,11 @@ li {
   font-style: italic;
 }
 
+#school {
+  color: bisque;
+  font-style: italic;
+}
+
 .radial-blue {
   background: radial-gradient(whitesmoke, skyblue)
 }
@@ -796,6 +805,14 @@ li {
 }
 
 @media (min-width: 640px) {
+  .sm\:float-right {
+    float: right;
+  }
+
+  .sm\:float-left {
+    float: left;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -803,6 +820,10 @@ li {
 
   .sm\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .sm\:max-w-2xl {
+    max-width: 42rem;
   }
 }
 

@@ -2,11 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* GENERAL STYLES */
+
+input, button {
+    font: inherit;
+}
+
+body main {
+    line-height: 6px;
 }
 
 h2 {
@@ -39,6 +56,12 @@ li {
     font-style: italic;
 }
 
+#school {
+    color: bisque;
+    font-style: italic;
+}
+
+/* CLASSES */
 .radial-blue {
     background: radial-gradient(whitesmoke, skyblue)
 }
