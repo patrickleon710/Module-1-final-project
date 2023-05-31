@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./build/*.html'],
+  content: [
+    "./portfolio.html",
+  ],
   theme: {
     extend: {
       'widescreen': {'raw': 'min-aspect-ratio: 3/2'},

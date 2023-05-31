@@ -740,11 +740,25 @@ video {
   text-decoration-line: underline;
 }
 
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* GENERAL STYLES */
+
+input, button {
+  font: inherit;
 }
 
 body main {
@@ -785,6 +799,8 @@ li {
   font-style: italic;
 }
 
+/* CLASSES */
+
 .radial-blue {
   background: radial-gradient(whitesmoke, skyblue)
 }
@@ -805,25 +821,17 @@ li {
 }
 
 @media (min-width: 640px) {
-  .sm\:float-right {
-    float: right;
-  }
-
-  .sm\:float-left {
-    float: left;
-  }
-
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .sm\:max-w-4xl {
-    max-width: 56rem;
-  }
-
   .sm\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .sm\:max-w-4xl {
+    max-width: 56rem;
   }
 }
 
